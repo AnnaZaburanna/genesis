@@ -1,0 +1,13 @@
+@import "../../assets/palette";
+@import "../../assets/main";
+
+.container {
+  width: 720px;
+  height: calc(100vh - 100px);
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: $primary-background-color;
+}

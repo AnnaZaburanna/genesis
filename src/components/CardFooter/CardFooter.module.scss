@@ -1,0 +1,9 @@
+@import "../../assets/palette";
+@import "../../assets/main";
+
+.footer {
+  border-top: 1px solid $border-color-grey;
+  background-color: $primary-background-color;
+  padding: 20px 24px;
+  text-align: right;
+}

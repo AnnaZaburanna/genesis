@@ -1,0 +1,53 @@
+@import "../../assets/palette";
+@import "../../assets/main";
+
+.radio_label {
+  @extend .main_title;
+  font-size: 12px;
+  color: $button-color-grey;
+  margin-right: 7px;
+  cursor: pointer;
+
+  &__checked {
+    @extend .radio_label;
+    color: $brand-color-purple
+  }
+}
+
+.radio_input {
+  margin: 0;
+  visibility: hidden;
+
+  &:checked + span {
+    border: 3px solid $brand-color-purple;
+    padding: 0;
+  }
+}
+
+.custom_radio {
+  left: -8px;
+  top: 2px;
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  border: 1px solid $button-color-grey;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  padding: 2px;
+
+  &::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: $brand-color-purple;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+
+  }
+}

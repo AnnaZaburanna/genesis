@@ -1,0 +1,39 @@
+@import "../../assets/palette";
+@import "../../assets/main";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  img {
+    padding: 0 10px;
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.closeButton {
+  width: 24px;
+  height: 24px;
+  background-color: $secondary-background-color;
+  border-radius: $border-radius;
+  text-align: center;
+  line-height: 22px;
+  cursor: pointer;
+
+  svg {
+    width: 8.5px;
+  }
+}

@@ -1,0 +1,36 @@
+@import "../../assets/palette";
+@import "../../assets/main";
+
+button {
+  border: none;
+  border-radius: $border-radius;
+  font-family: Inter, sans-serif;
+  padding: 5px 10px;
+  cursor: pointer;
+
+  img {
+    padding: 0 10px;
+  }
+}
+
+.create {
+  background-color: $background-color-green;
+  color: $text-color-success;
+}
+
+.save {
+  width: 230px;
+  height: 50px;
+  background-color: $button-color-grey;
+  color: $secondary-background-color;
+}
+
+.title_container {
+  display: flex;
+  justify-content: center;
+}
+
+.add_new {
+  color: $brand-color-purple;
+  background-color: $background-color-light-purple;
+}

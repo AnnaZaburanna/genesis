@@ -1,0 +1,96 @@
+@import "../../assets/palette";
+@import "../../assets/main";
+
+.main_container {
+  overflow-y: scroll;
+
+  &__scroller {
+    width: 100%;
+    overflow-y: scroll;
+    height: calc(100vh - 150px);
+
+    &::-webkit-scrollbar {
+      width: 4px;
+      height: 80px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $button-color-grey;
+      border-radius: 40px;
+      height: 80px;
+    }
+  }
+}
+
+.container {
+  background-color: $secondary-background-color;
+  border-bottom: 1px solid $border-color-grey;
+  padding: 24px;
+  margin: 0 24px;
+
+  &__top {
+    @extend .container;
+    border-radius: 20px 20px 0 0;
+
+  }
+
+  &__center {
+    @extend .container;
+    border-radius: 0;
+
+  }
+
+  &__bottom {
+    @extend .container;
+    border-radius: 0 0 20px 20px;
+    border-bottom: none;
+  }
+}
+
+.select_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+}
+
+.account_container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  margin: 12px 0;
+}
+
+.card_item_3 {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.title {
+  @extend .main_title;
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+}
+
+.cards_container {
+  @extend .container;
+  border: 1px solid $border-color-grey;
+  border-radius: $border-radius;
+  margin: 0;
+  padding: 16px;
+}
+
+.cards_input {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
